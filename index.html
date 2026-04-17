@@ -3,11 +3,362 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Your Name | Portfolio</title>
+        <title>Anna Pingsmann | Frontend Developer</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css" />
     </head>
 
     <body>
-    </body>
+        <div class="cursor" id="cursor"></div>
 
+        <nav id="nav">
+            <div class="nav-inner">
+                <a href="#hero" class="nav-logo">anna.pingsmann<span class="nav-logo-suffix">_dev</span></a>
+
+                <ul class="nav-links">
+                    <li><a href="#projects">Work</a></li>
+                    <li><a href="#skills">Stack</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact" class="nav-cta">Let’s talk ↗</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <section id="hero">
+                <div class="hero-grid-bg"></div>
+
+                <div class="container hero-inner">
+                    <div class="hero-status">
+                        <div class="hero-status-dot"></div>
+                        <span>Based in Berlin · Open to opportunities</span>
+                    </div>
+
+                    <h1 class="hero-headline">
+                        Frontend Developer<br />
+                        <em>with full-stack experience.</em>
+                    </h1>
+
+                    <p class="hero-sub">
+Frontend developer based in Berlin, with a background in Architecture. Building clean, functional, and structured interfaces, shaped by architecture & driven by real users.                    </p>
+
+                    <p class="hero-meta">
+                     Fluent in German, English, Japanese
+                    </p>
+                    <br/>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn-primary">View projects ↓</a>
+                        <a href="#contact" class="btn-secondary">Get in touch</a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="marquee-section" aria-hidden="true">
+                <div class="marquee-track">
+                    <span class="marquee-item">React</span>
+                    <span class="marquee-item">TypeScript</span>
+                    <span class="marquee-item">JavaScript</span>
+                    <span class="marquee-item">Node.js</span>
+                    <span class="marquee-item">Express</span>
+                    <span class="marquee-item">MongoDB</span>
+                    <span class="marquee-item">PostgreSQL</span>
+                    <span class="marquee-item">React Native</span>
+                    <span class="marquee-item">Firebase</span>
+                    <span class="marquee-item">REST APIs</span>
+                    <span class="marquee-item">Git / GitHub</span>
+                    <span class="marquee-item">Responsive Design</span>
+
+                    <span class="marquee-item">React</span>
+                    <span class="marquee-item">TypeScript</span>
+                    <span class="marquee-item">JavaScript</span>
+                    <span class="marquee-item">Node.js</span>
+                    <span class="marquee-item">Express</span>
+                    <span class="marquee-item">MongoDB</span>
+                    <span class="marquee-item">PostgreSQL</span>
+                    <span class="marquee-item">React Native</span>
+                    <span class="marquee-item">Firebase</span>
+                    <span class="marquee-item">REST APIs</span>
+                    <span class="marquee-item">Git / GitHub</span>
+                    <span class="marquee-item">Responsive Design</span>
+                </div>
+            </div>
+
+            <section id="projects">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <div class="section-header-left">
+                            <span class="section-label">Selected work</span>
+                            <h2 class="section-title">Projects I built to solve real problems</h2>
+                        </div>
+                    </div>
+
+                    <div class="projects-grid">
+                        <article class="project-card featured reveal">
+                            <div class="card-preview">
+                                <img
+                                    src="assets/projects/job-tracker/job-tracker-cover.jpg"
+                                    alt="Screenshot of the Job Tracker application"
+                                    class="project-image"
+                                />
+                            </div>
+
+                            <div class="card-body">
+                                <div>
+                                    <div class="card-tags card-tags-large">
+                                        <span class="tag">React</span>
+                                        <span class="tag">Node.js</span>
+                                        <span class="tag">Express</span>
+                                        <span class="tag">MongoDB</span>
+                                    </div>
+
+                                    <h3 class="card-title">Job Tracker</h3>
+
+                                    <p class="card-desc">
+                                        Full-stack job application tracker with Kanban and table views,
+                                        drag-and-drop updates, and a backend built for persistent data
+                                        management.
+                                    </p>
+                                </div>
+
+                                <div class="card-foot">
+                                    <div class="card-links">
+                                        <a href="#" class="card-link">Live Demo ↗</a>
+                                        <a href="#" class="card-link">GitHub ↗</a>
+                                    </div>
+                                    <span class="card-badge badge-green">Featured</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card reveal reveal-delay-1">
+                            <div class="card-preview">
+                                <img
+                                    src="assets/projects/darkframe/darkframe-cover.jpg"
+                                    alt="Screenshot of the DarkFrame application"
+                                    class="project-image"
+                                />
+                            </div>
+
+                            <div class="card-body">
+                                <div>
+                                    <div class="card-tags card-tags-small">
+                                        <span class="tag">React</span>
+                                        <span class="tag">Node.js</span>
+                                        <span class="tag">MongoDB</span>
+                                        <span class="tag">JWT</span>
+                                    </div>
+
+                                    <h3 class="card-title">DarkFrame</h3>
+
+                                    <p class="card-desc">
+                                        Movie discovery app with user authentication, favorites, and a
+                                        polished interface focused on browsing and user flow.
+                                    </p>
+                                </div>
+
+                                <div class="card-foot">
+                                    <div class="card-links">
+                                        <a href="#" class="card-link">Live Demo ↗</a>
+                                        <a href="#" class="card-link">GitHub ↗</a>
+                                    </div>
+                                    <span class="card-badge badge-amber">Web App</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card reveal reveal-delay-2">
+                            <div class="card-preview">
+                                <img
+                                    src="assets/projects/chatapp/chatapp-cover.jpg"
+                                    alt="Screenshot of the ChatApp mobile application"
+                                    class="project-image"
+                                />
+                            </div>
+
+                            <div class="card-body">
+                                <div>
+                                    <div class="card-tags card-tags-small">
+                                        <span class="tag">React Native</span>
+                                        <span class="tag">Firebase</span>
+                                        <span class="tag">Firestore</span>
+                                    </div>
+
+                                    <h3 class="card-title">ChatApp</h3>
+
+                                    <p class="card-desc">
+                                        Cross-platform mobile chat app with real-time messaging, media
+                                        sharing, and mobile-first functionality built with React Native.
+                                    </p>
+                                </div>
+
+                                <div class="card-foot">
+                                    <div class="card-links">
+                                        <a href="#" class="card-link">GitHub ↗</a>
+                                    </div>
+                                    <span class="card-badge badge-blue">Mobile</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills">
+                <div class="container">
+                    <div class="skills-layout">
+                        <div class="skills-intro reveal">
+                            <span class="section-label">Tech stack</span>
+                            <h2 class="section-title skills-title">Frontend focused,<br />full-stack capable</h2>
+                            <p>
+                                I enjoy building clean user interfaces, but I am also comfortable
+                                working across the backend, APIs, and databases needed to support them.
+                            </p>
+                        </div>
+
+                        <div class="skills-groups">
+                            <div class="reveal">
+                                <div class="skill-group-label">Frontend</div>
+                                <div class="skill-items">
+                                    <span class="skill-pill"><span class="skill-dot dot-accent"></span>HTML</span>
+                                    <span class="skill-pill"><span class="skill-dot dot-accent"></span>CSS</span>
+                                    <span class="skill-pill"><span class="skill-dot dot-accent"></span>JavaScript</span>
+                                    <span class="skill-pill"><span class="skill-dot dot-accent"></span>TypeScript</span>
+                                    <span class="skill-pill"><span class="skill-dot dot-accent"></span>React</span>
+                                    <span class="skill-pill"><span class="skill-dot dot-accent"></span>React Native</span>
+                                </div>
+                            </div>
+
+                            <div class="reveal reveal-delay-1">
+                                <div class="skill-group-label">Backend</div>
+                                <div class="skill-items">
+                                    <span class="skill-pill"><span class="skill-dot dot-green"></span>Node.js</span>
+                                    <span class="skill-pill"><span class="skill-dot dot-green"></span>Express</span>
+                                    <span class="skill-pill"><span class="skill-dot dot-green"></span>REST APIs</span>
+                                    <span class="skill-pill"><span class="skill-dot dot-green"></span>JWT Auth</span>
+                                </div>
+                            </div>
+
+                            <div class="reveal reveal-delay-2">
+                                <div class="skill-group-label">Data &amp; Tools</div>
+                                <div class="skill-items">
+                                    <span class="skill-pill"><span class="skill-dot dot-amber"></span>MongoDB</span>
+                                    <span class="skill-pill"><span class="skill-dot dot-amber"></span>PostgreSQL</span>
+                                    <span class="skill-pill"><span class="skill-dot dot-amber"></span>Firebase</span>
+                                    <span class="skill-pill"><span class="skill-dot dot-amber"></span>Git / GitHub</span>
+                                    <span class="skill-pill"><span class="skill-dot dot-amber"></span>Netlify</span>
+                                    <span class="skill-pill"><span class="skill-dot dot-amber"></span>Postman</span>
+                                </div>
+                            </div>
+
+                            <div class="reveal reveal-delay-3">
+                                <div class="skill-group-label">Working Style</div>
+                                <div class="skill-items">
+                                    <span class="skill-pill"><span class="skill-dot dot-blue"></span>Responsive Design</span>
+                                    <span class="skill-pill"><span class="skill-dot dot-blue"></span>Accessibility</span>
+                                    <span class="skill-pill"><span class="skill-dot dot-blue"></span>Agile</span>
+                                    <span class="skill-pill"><span class="skill-dot dot-blue"></span>Clean Code</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about">
+                <div class="about-noise"></div>
+
+                <div class="container">
+                    <div class="about-layout">
+                        <div class="reveal">
+                            <span class="section-label">About</span>
+                            <h2 class="section-title">From construction sites to coding<br />website interfaces.</h2>
+                            <p class="about-text">
+                                Before joining tech, I worked in architecture. That's where I learned to think in systems, structure complex ideas, and design with real people in mind. 
+                                Coding felt like a natural extension of that. 
+                                I also bring experience from working in international teams and speak three languages fluently.
+                            </p>
+                        </div>
+
+                        <div class="pfp-wrap reveal reveal-delay-1">
+                            <div class="pfp">
+                                <img
+                                    src="assets/profile/profile.jpg"
+                                    alt="Portrait of Anna Pingsmann"
+                                    class="profile-image"
+                                />
+                            </div>
+
+                            <a href="assets/resume.pdf" class="resume-btn" target="_blank" rel="noopener">
+                                Resume / CV
+                                <span>Download PDF →</span>
+                            </a>
+                        </div>
+
+                        <div class="about-facts reveal reveal-delay-2">
+                            <div class="about-fact">
+                                <div class="about-fact-label">Currently</div>
+                                <div class="about-fact-val">Open to frontend and full-stack opportunities</div>
+                            </div>
+
+                            <div class="about-fact">
+                                <div class="about-fact-label">Location</div>
+                                <div class="about-fact-val">Berlin, Germany</div>
+                            </div>
+
+                            <div class="about-fact">
+                                <div class="about-fact-label">Background</div>
+                                <div class="about-fact-val">Architecture, strategy, and hospitality</div>
+                            </div>
+
+                            <div class="about-fact">
+                                <div class="about-fact-label">Focus</div>
+                                <div class="about-fact-val">Clean interfaces, useful products, and maintainable code</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="container">
+                    <div class="contact-inner">
+                        <div class="contact-left reveal">
+                            <span class="section-label">Contact</span>
+                            <h2 class="contact-tagline">Let's build<br />something <em>real.</em></h2>
+                            <p class="contact-sub">
+                                I'm currently looking for opportunities where I can contribute, keep
+                                learning, and build thoughtful digital products with a strong frontend focus.
+                            </p>
+                            <a href="mailto:anna.pingsmann@gmail.com" class="contact-email">
+                                anna.pingsmann@gmail.com →
+                            </a>
+                        </div>
+
+                        <div class="contact-right reveal reveal-delay-1">
+                            <a href="https://github.com/annapgsm" class="contact-link" target="_blank" rel="noopener">
+                                GitHub
+                                <span>github.com/annapgsm →</span>
+                            </a>
+
+                            <a href="https://linkedin.com/in/anna-pingsmann" class="contact-link" target="_blank" rel="noopener">
+                                LinkedIn
+                                <span>linkedin.com/in/anna-pingsmann →</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-inner">
+                <span class="footer-copy">© 2026 Anna Pingsmann. Built with HTML, CSS and JavaScript.</span>
+                <span class="footer-available"><span class="avail-dot"></span>Open to opportunities</span>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
 </html>
