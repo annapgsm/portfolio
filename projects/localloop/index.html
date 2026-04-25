@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Chat App | Anna Pingsmann</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="../styles/global.css"> />
+    </head>
+
+    <body>
+        <div class="cursor" id="cursor"></div>
+
+        <nav id="nav">
+            <div class="nav-inner">
+                <a href="../../index.html" class="nav-logo">anna.pingsmann<span class="nav-logo-suffix">_dev</span></a>
+                <a href="../../index.html" class="nav-back">← Back to portfolio</a>
+            </div>
+        </nav>
+
+        <main>
+            <section id="project-header">
+                <div class="container">
+                    <div class="project-meta">
+                        <span class="project-meta-dot"></span>
+                        <span>Mobile App · 2026</span>
+                    </div>
+
+                    <h1 class="project-title">Local Loop</h1>
+
+                    <p class="project-desc">
+                        A mobile chat app built with React Native and Firebase, focused on real-time messaging and offline use.
+                    </p>
+                        <div class="project-header-grid">
+                        <div class="tech-stack">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Expo</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Firestore</span>
+                            <span class="tech-tag">AsyncStorage</span>
+                            <span class="tech-tag">Expo APIs</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank" rel="noopener">
+                                <span class="project-link-label">Live demo</span>
+                                <span class="project-link-icon">↗</span>
+                            </a>
+
+                            <a href="https://github.com/annapgsm/chatApp" class="project-link" target="_blank" rel="noopener">
+                                <span class="project-link-label">Source code </span>
+                                <span class="project-link-icon">↗</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="carousel-section">
+                <div class="carousel-wrapper">
+                    <div class="carousel-container">
+
+                        <div class="carousel-single">
+                            <img
+                                src="../../assets/projects/localloop/mockup_detail.png"
+                                alt="LocalLoop chat app preview"
+                            />
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="features">
+                <div class="container">
+                    <span class="section-label">Core Features</span>
+                    <h2 class="section-title">Real-time messaging, offline access, and native mobile features in one app.</h2>
+
+                    <div class="features-grid">
+                        <article class="feature-card">
+                            <h3 class="feature-title">Real-Time Messaging</h3>
+                            <p class="feature-desc">
+                                Messages update instantly using Firestore listeners, keeping conversations in sync without refresh.
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <h3 class="feature-title">Offline Support</h3>
+                            <p class="feature-desc">
+                                Messages are cached locally, so users can still access conversations without a network connection.                            
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <h3 class="feature-title">Media Sharing</h3>
+                            <p class="feature-desc">
+                                Users can take photos or select images from their device and send them directly in chat.
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <h3 class="feature-title">Location Sharing</h3>
+                            <p class="feature-desc">
+                                The app can send a user's current location, display it as a map preview inside the conversation, and open it in Google Maps. 
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <h3 class="feature-title">Network Handling</h3>
+                            <p class="feature-desc">
+                                The app detects connection changes and adapts automatically between online and offline states.
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <h3 class="feature-title">Reusable Component Structure</h3>
+                            <p class="feature-desc">
+                                The interface is built from modular components, making the application easier to maintain and extend.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tech">
+                <div class="container">
+                    <div class="tech-grid">
+                        <div>
+                            <span class="section-label">Technical approach</span>
+                            <h2 class="section-title">Architecture and Stack</h2>
+
+                            <div class="tech-content">
+                                <p>
+                                    Chat App is built with React Native and Expo, using Firebase as the backend.
+                                    Messages are stored in Firestore and updated through real-time listeners, so conversations stay in sync across devices.
+                                </p>
+
+                                <p>
+                                    The app also handles mobile-specific situations like unstable connections, media uploads, and location sharing.
+                                    Messages are cached with AsyncStorage for offline access, while Firebase Auth manages users and Cloud Storage stores shared images.     
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tech-stack-detail">
+                            <div>
+                                <div class="tech-group-label">Frontend</div>
+                                <div class="tech-items">
+                                    <span class="tech-item">React Native</span>
+                                    <span class="tech-item">Expo</span>
+                                    <span class="tech-item">JavaScript</span>
+                                    <span class="tech-item">React Navigation</span>
+                                    <span class="tech-item">Gifted Chat</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="tech-group-label">Backend & Data</div>
+                                <div class="tech-items">
+                                    <span class="tech-item">Firebase Firestore</span>
+                                    <span class="tech-item">Firebase Auth</span>
+                                    <span class="tech-item">Cloud Storage</span>
+                                    <span class="tech-item">Real-time listeners</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="tech-group-label">Mobile & Native Features</div>
+                                <div class="tech-items">
+                                    <span class="tech-item">Expo ImagePicker</span>
+                                    <span class="tech-item">Expo Location</span>
+                                    <span class="tech-item">react-native-maps</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="tech-group-label">Infrastructure</div>
+                                <div class="tech-items">
+                                    <span class="tech-item">AsyncStorage</span>
+                                    <span class="tech-item">NetInfo</span>
+                                    <span class="tech-item">Expo CLI</span>
+                                    <span class="tech-item">Android / iOS Simulators</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="learnings">
+                <div class="container">
+                    <span class="section-label">What I learned</span>
+                    <h2 class="section-title">Takeaways</h2>
+
+                    <div class="learnings-list">
+                        <article class="learning-item">
+                            <h3 class="learning-title">Working with real-time data</h3>
+                            <p class="learning-text">
+                                Using Firestore helped me understand how to keep multiple users in sync without manual updates.
+                            </p>
+                        </article>
+
+                        <article class="learning-item">
+                            <h3 class="learning-title">Designing for offline scenarios</h3>
+                            <p class="learning-text">
+                                Handling network loss made it clear how important fallback behavior is in mobile apps.
+                            </p>
+
+                        </article>
+
+                        <article class="learning-item">
+                            <h3 class="learning-title">Connecting to native device features</h3>
+                            <p class="learning-text">
+                                Integrating camera and location showed how React Native bridges JavaScript with real device capabilities.
+                            </p>
+                        </article>
+                    
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-inner">
+                <a href="../../index.html" class="footer-back">← Back to all projects</a>
+                <span class="footer-credits">Built by Anna Pingsmann</span>
+            </div>
+        </footer>
+
+        <script src="../script.js"></script>
+    </body>
+</html>

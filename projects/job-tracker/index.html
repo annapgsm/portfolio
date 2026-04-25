@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Job Tracker | Anna Pingsmann</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="../styles/global.css"> />
+    </head>
+
+    <body>
+        <div class="cursor" id="cursor"></div>
+
+        <nav id="nav">
+            <div class="nav-inner">
+                <a href="../../index.html" class="nav-logo">anna.pingsmann<span class="nav-logo-suffix">_dev</span></a>
+                <a href="../../index.html" class="nav-back">← Back to portfolio</a>
+            </div>
+        </nav>
+
+        <main>
+            <section id="project-header">
+                <div class="container">
+                    <div class="project-meta">
+                        <span class="project-meta-dot"></span>
+                        <span>Full-Stack Project · 2026</span>
+                    </div>
+
+                    <h1 class="project-title">Job Tracker</h1>
+
+                    <p class="project-desc">
+                        A full-stack application that brings structure to the job search process, from saved roles to final offers.
+                    </p>
+
+                    <div class="project-header-grid">
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Drag and Drop</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://job-tracker-five-zeta.vercel.app" class="project-link" target="_blank" rel="noopener">
+                                <span class="project-link-label">Live demo</span>
+                                <span class="project-link-icon">↗</span>
+                            </a>
+
+                            <a href="https://github.com/annapgsm/job-tracker" class="project-link" target="_blank" rel="noopener">
+                                <span class="project-link-label">Source code</span>
+                                <span class="project-link-icon">↗</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="carousel-section">
+                <div class="carousel-wrapper">
+                    <div class="carousel-container">
+                        <div class="carousel-slides" id="carouselSlides">
+                            <div class="carousel-slide">
+                                <video autoplay loop muted playsinline>
+                                    <source src="../../assets/projects/job-tracker/home.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+
+                            <div class="carousel-slide">
+                                <video autoplay loop muted playsinline>
+                                    <source src="../../assets/projects/job-tracker/drag.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+
+                            <div class="carousel-slide">
+                                <img
+                                    src="../../assets/projects/job-tracker/detail.png"
+                                    alt="Job Tracker detail view"
+                                />
+                            </div>
+
+                            <div class="carousel-slide">
+                                <img
+                                    src="../../assets/projects/job-tracker/list.png"
+                                    alt="Job Tracker table view"
+                                />
+                            </div>
+                        </div>
+
+                        <button class="carousel-btn carousel-btn-prev" id="prevBtn" aria-label="Previous screenshot">
+                            <
+                        </button>
+
+                        <button class="carousel-btn carousel-btn-next" id="nextBtn" aria-label="Next screenshot">
+                            ›
+                        </button>
+                    </div>
+
+                    <div class="carousel-thumbnails" id="carouselThumbnails">
+                        <button class="carousel-thumb active" data-index="0">
+                            <img
+                                src="../../assets/projects/job-tracker/home.png"
+                                alt="Thumbnail of Job Tracker overview"
+                            />
+                        </button>
+
+                        <button class="carousel-thumb" data-index="1">
+                            <img
+                                src="../../assets/projects/job-tracker/drag.png"
+                                alt="Thumbnail of Job Tracker board view"
+                            />
+                        </button>
+
+                        <button class="carousel-thumb" data-index="2">
+                            <img
+                                src="../../assets/projects/job-tracker/detail.png"
+                                alt="Thumbnail of Job Tracker detail view"
+                            />
+                        </button>
+
+                        <button class="carousel-thumb" data-index="3">
+                            <img
+                                src="../../assets/projects/job-tracker/list.png"
+                                alt="Thumbnail of Job table view"
+                            />
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="features">
+                <div class="container">
+                    <span class="section-label">Core Features</span>
+                    <h2 class="section-title">Turn a scattered job search into a clear, structured process.</h2>
+
+                    <div class="features-grid">
+                        <article class="feature-card">
+                            <h3 class="feature-title">Kanban workflow with drag & drop</h3>
+                            <p class="feature-desc">
+                                Move applications between stages with drag and drop, with changes reflected instantly in the UI and synced to the database.
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <h3 class="feature-title">Board and table views</h3>
+                            <p class="feature-desc">
+                                Switch between a visual board and a structured table depending on whether you want a quick overview or a more detailed comparison.
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <h3 class="feature-title">Optimistic UI updates</h3>
+                            <p class="feature-desc">
+                                Interactions feel immediate by updating the interface first, while changes are confirmed with the backend in the background.
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <h3 class="feature-title">Smart search & filtering</h3>
+                            <p class="feature-desc">
+                                Quickly narrow down applications through responsive search and status filters, without duplicating data across views.
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <h3 class="feature-title">Archive instead of delete</h3>
+                            <p class="feature-desc">
+                                Archive applications instead of deleting them immediately, making it easier to clean up the workspace without losing important data.
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <h3 class="feature-title">Fully responsive across devices</h3>
+                            <p class="feature-desc">
+                                Designed to work smoothly across desktop and mobile, with layouts and interactions adapted for smaller screens.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tech">
+                <div class="container">
+                    <div class="tech-grid">
+                        <div>
+                            <span class="section-label">Technical approach</span>
+                            <h2 class="section-title">Architecture and Stack</h2>
+
+                            <div class="tech-content">
+                                <p>
+                                    The application is built as a seperated full-stack application, with a React frontend and a Node.js and Express API backed by MongoDB.
+                                    Frontend and backend are deployed independently, reflecting a more realistic production setup.
+                                </p>
+
+                                <p>
+                                    On the frontend, state is managed centrally and filtered views are derived from the same dataset, which keeps the UI consistent across the board, table, and archive flows. 
+                                    To make the experience feel fast and responsive, updates are handled optimistically and then synchronized with the backend.
+                                </p>                    
+
+                            </div>
+                        </div>
+
+                        <div class="tech-stack-detail">
+                            <div>
+                                <div class="tech-group-label">Frontend</div>
+                                <div class="tech-items">
+                                    <span class="tech-item">React</span>
+                                    <span class="tech-item">JavaScript</span>
+                                    <span class="tech-item">CSS</span>
+                                    <span class="tech-item">Vite</span>
+                                    <span class="tech-item">Responsive Design</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="tech-group-label">Backend</div>
+                                <div class="tech-items">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">Express</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                    <span class="tech-tag">REST API</span>
+                                    <span class="tech-tag">Drag & Drop</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="tech-group-label">Data & Tools</div>
+                                <div class="tech-items">
+                                    <span class="tech-item">MongoDB Atlas</span>
+                                    <span class="tech-item">Mongoose</span>
+                                    <span class="tech-item">Axios</span>
+                                    <span class="tech-item">GitHub</span>
+                                    <span class="tech-item">Postman</span>
+                                    <span class="tech-item">Vercel & Render</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="learnings">
+                <div class="container">
+                    <span class="section-label">What I learned</span>
+                    <h2 class="section-title">Takeaways</h2>
+
+                    <div class="learnings-list">
+                        <article class="learning-item">
+                            <h3 class="learning-title">Owning decisions end-to-end</h3>
+                            <p class="learning-text">
+                                This was the first project I planned and built independently after finishing my course, which meant making both technical and product decisions without a predefined path.
+                            </p>
+                        </article>
+
+                        <article class="learning-item">
+                            <h3 class="learning-title">Designing around real workflows</h3>
+                            <p class="learning-text">
+                                Instead of treating the app as a collection of features, I focused on how people actually manage a job search and built the experience around that flow.
+                            </p>
+                        </article>
+
+                        <article class="learning-item">
+                            <h3 class="learning-title">Keeping complexity manageable</h3>
+                            <p class="learning-text">
+                                Building multiple views, drag-and-drop interactions, and optimistic updates taught me how important clean state structure is as an application grows.
+                            </p>
+                        </article>
+                    
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-inner">
+                <a href="../../index.html" class="footer-back">← Back to all projects</a>
+                <span class="footer-credits">Built by Anna Pingsmann</span>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

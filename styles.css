@@ -440,7 +440,6 @@ nav.scrolled {
 .project-card.featured {
     grid-column: 1 / -1;
     flex-direction: row;
-    min-height: 320px;
 }
 
 .card-preview {
@@ -448,14 +447,19 @@ nav.scrolled {
     position: relative;
     overflow: hidden;
     flex-shrink: 0;
+    aspect-ratio: 16 / 9;
+     border-right: 1px solid var(--rule);
+
 }
 
 .project-card.featured .card-preview {
     width: 50%;
+    height: auto;
 }
 
 .project-card:not(.featured) .card-preview {
-    height: 220px;
+    width: 100%;
+    height: auto;
 }
 
 .project-image {
@@ -464,6 +468,7 @@ nav.scrolled {
     object-fit: cover;
     object-position: top center;
     transition: transform 0.35s ease;
+    display: block;
 }
 
 .project-card:hover .project-image {
@@ -578,7 +583,6 @@ nav.scrolled {
     background: var(--blue-bg);
     color: var(--blue);
 }
-
 /* =========================================================
    10. SKILLS SECTION
    - Two-column layout

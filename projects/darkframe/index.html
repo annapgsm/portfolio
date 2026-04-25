@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dark Frame | Anna Pingsmann</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="../styles/global.css"> />
+    </head>
+
+    <body>
+        <div class="cursor" id="cursor"></div>
+
+        <nav id="nav">
+            <div class="nav-inner">
+                <a href="../../index.html" class="nav-logo">anna.pingsmann<span class="nav-logo-suffix">_dev</span></a>
+                <a href="../../index.html" class="nav-back">← Back to portfolio</a>
+            </div>
+        </nav>
+
+        <main>
+            <section id="project-header">
+                <div class="container">
+                    <div class="project-meta">
+                        <span class="project-meta-dot"></span>
+                        <span>Full-Stack Project · 2026</span>
+                    </div>
+
+                    <h1 class="project-title">Dark Frame</h1>
+
+                    <p class="project-desc">
+                        A movie discovery app built with React and a custom API, combining search, authentication, and persistent user data.
+                    </p>
+
+                    <div class="project-header-grid">
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">React Router</span>
+                            <span class="tech-tag">Redux</span>
+                            <span class="tech-tag">JWT</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://job-tracker-five-zeta.vercel.app" class="project-link" target="_blank" rel="noopener">
+                                <span class="project-link-label">Live demo</span>
+                                <span class="project-link-icon">↗</span>
+                            </a>
+
+                            <a href="https://github.com/annapgsm/darkframe-client" class="project-link" target="_blank" rel="noopener">
+                                <span class="project-link-label">Source code (Client)  </span>
+                                <span class="project-link-icon">↗</span>
+                            </a>
+
+                            <a href="https://github.com/annapgsm/darkframe-api" class="project-link" target="_blank" rel="noopener">
+                                <span class="project-link-label">Source code (API)</span>
+                                <span class="project-link-icon">↗</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="carousel-section">
+                <div class="carousel-wrapper">
+                    <div class="carousel-container">
+                        <div class="carousel-slides" id="carouselSlides">
+                            <div class="carousel-slide">
+                                <img
+                                    src="../../assets/projects/darkframe/home.png"
+                                    alt="Dark Frame Home View"
+                                />
+                            </div>
+
+
+                            <div class="carousel-slide">
+                                <img
+                                    src="../../assets/projects/darkframe/detail.png"
+                                    alt="Dark Frame Movie Detail View"
+                                />
+                            </div>
+
+                            <div class="carousel-slide">
+                                <img
+                                    src="../../assets/projects/darkframe/profile.png"
+                                    alt="Dark Frame Profile View"
+                                />
+                            </div>
+                        </div>
+
+                        <button class="carousel-btn carousel-btn-prev" id="prevBtn" aria-label="Previous screenshot">
+                            <
+                        </button>
+
+                        <button class="carousel-btn carousel-btn-next" id="nextBtn" aria-label="Next screenshot">
+                            ›
+                        </button>
+                    </div>
+
+                    <div class="carousel-thumbnails" id="carouselThumbnails">
+                        <button class="carousel-thumb active" data-index="0">
+                            <img
+                                src="../../assets/projects/darkframe/home.png"
+                                alt="Thumbnail of DarkFrame Overview"
+                            />
+                        </button>
+
+                        <button class="carousel-thumb" data-index="1">
+                            <img
+                                src="../../assets/projects/darkframe/detail.png"
+                                alt="Thumbnail of Dark Frame Movie Detail View"
+                            />
+                        </button>
+
+                        <button class="carousel-thumb" data-index="2">
+                            <img
+                                src="../../assets/projects/darkframe/profile.png"
+                                alt="Thumbnail of Dark Frame Profile View"
+                            />
+                        </button>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="features">
+                <div class="container">
+                    <span class="section-label">Core Features</span>
+                    <h2 class="section-title">Fast search, secure access, and personalized movie tracking.</h2>
+
+                    <div class="features-grid">
+                        <article class="feature-card">
+                            <h3 class="feature-title">Real-Time Search</h3>
+                            <p class="feature-desc">
+                                Search updates instantly as users type, making movie discovery fast and frictionless.
+                        </article>
+
+                        <article class="feature-card">
+                            <h3 class="feature-title">Authentication Flow</h3>
+                            <p class="feature-desc">
+                                Users can register, log in, and access protected views through secure JWT-based authentication.
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <h3 class="feature-title">Persistent Favorites</h3>
+                            <p class="feature-desc">
+                                Favorite movies are stored in the database, creating a personalized experience across sessions.
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <h3 class="feature-title">Structured Data Rendering</h3>
+                            <p class="feature-desc">
+                                Each movie includes genre, director, and descriptive metadata to support deeper exploration.                            
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <h3 class="feature-title">API Driven Frontend</h3>
+                            <p class="feature-desc">
+                                All content and user actions are connected to a REST API, linking the interface directly to backend data.
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <h3 class="feature-title">Resuable Component Structure</h3>
+                            <p class="feature-desc">
+                                The interface is built from modular components, making the application easier to maintain and extend.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tech">
+                <div class="container">
+                    <div class="tech-grid">
+                        <div>
+                            <span class="section-label">Technical approach</span>
+                            <h2 class="section-title">Architecture and Stack</h2>
+
+                            <div class="tech-content">
+                                <p>
+                                    DarkFrame is built as a single-page application with a clear separation between frontend and backend.
+                                    The React client handles the interface, routing, and user interactions, while all data is loaded from a REST API.
+                                    This keeps the app fast and responsive, with updates happening instantly without full page reloads.
+                                </p>
+
+                                <p>
+                                    On the backend, the API is structured into routes and data models to keep the codebase easy to extend.
+                                    MongoDB stores user and movie data, while JWT authentication is used to securely manage user sessions.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="tech-stack-detail">
+                            <div>
+                                <div class="tech-group-label">Frontend</div>
+                                <div class="tech-items">
+                                    <span class="tech-item">React</span>
+                                    <span class="tech-item">React Router</span>
+                                    <span class="tech-item">Redux</span>
+                                    <span class="tech-item">Bootstrap</span>
+                                    <span class="tech-item">Parcel</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="tech-group-label">Backend & API</div>
+                                <div class="tech-items">
+                                    <span class="tech-item">Node.js</span>
+                                    <span class="tech-item">Express</span>
+                                    <span class="tech-item">MongoDB Atlas</span>
+                                    <span class="tech-item">Mongoose</span>
+                                    <span class="tech-item">REST API</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="tech-group-label">Authentication & Security</div>
+                                <div class="tech-items">
+                                    <span class="tech-item">JWT</span>
+                                    <span class="tech-item">Passport</span>
+                                    <span class="tech-item">express-validator</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="tech-group-label">Tools & Deployment</div>
+                                <div class="tech-items">
+                                    <span class="tech-item">Netlify</span>
+                                    <span class="tech-item">Render</span>
+                                    <span class="tech-item">Postman</span>
+                                    <span class="tech-item">GitHub</span>
+                                    <span class="tech-item">dotenv</span>
+                                    <span class="tech-item">CORS / Morgan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="learnings">
+                <div class="container">
+                    <span class="section-label">What I learned</span>
+                    <h2 class="section-title">Takeaways</h2>
+
+                    <div class="learnings-list">
+                        <article class="learning-item">
+                            <h3 class="learning-title">Full-Stack Integration</h3>
+                            <p class="learning-text">
+                                Building both frontend and backend gave me a clearer understanding of how interface decisions, API design, and database updates work together.
+                            </p>
+                        </article>
+
+                        <article class="learning-item">
+                            <h3 class="learning-title">Authentication & User Sessions</h3>
+                            <p class="learning-text">
+                                Implementing JWT authentication helped me understand how protected routes, validation, and user-specific data need to work together across the stack.
+                            </p>
+
+                        </article>
+
+                        <article class="learning-item">
+                            <h3 class="learning-title">Structuring for Maintainablility</h3>
+                            <p class="learning-text">
+                                Working on both sides of the application reinforced the importance of clear structure and separation of concerns when building features that can scale.
+                            </p>
+                        </article>
+                    
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-inner">
+                <a href="../../index.html" class="footer-back">← Back to all projects</a>
+                <span class="footer-credits">Built by Anna Pingsmann</span>
+            </div>
+        </footer>
+
+        <script src="../script.js"></script>
+    </body>
+</html>
