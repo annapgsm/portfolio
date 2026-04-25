@@ -249,7 +249,7 @@ nav.scrolled {
     opacity: 0;
     animation: fadeUp 0.6s 0.2s forwards;
     font-family: var(--serif);
-    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-size: clamp(2rem, 5vw, 3.2rem);
     line-height: 1.06;
     letter-spacing: -0.02em;
     color: var(--ink);
@@ -399,7 +399,7 @@ nav.scrolled {
 
 .section-title {
     font-family: var(--serif);
-    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-size: clamp(0.8rem, 3vw, 2.2rem);
     line-height: 1.1;
     letter-spacing: -0.02em;
 }
@@ -717,9 +717,9 @@ nav.scrolled {
 
 .about-text {
     margin-top: 1.25rem;
-    font-size: 0.975rem;
+    font-size: 0.86rem;
     color: rgba(247, 246, 242, 0.7);
-    line-height: 1.8;
+    line-height: 1.6;
     font-weight: 300;
 }
 
@@ -727,7 +727,7 @@ nav.scrolled {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 2.2rem;
 }
 
 .pfp {
@@ -818,7 +818,7 @@ nav.scrolled {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
     gap: 6rem;
-    align-items: start;
+    align-items: flex-end;
 }
 
 .contact-left {
@@ -1012,6 +1012,12 @@ footer {
    ========================================================= */
 
 @media (max-width: 768px) {
+
+    .hero-headline {
+        margin-bottom: 7rem;
+        margin-top: 2rem;
+    }
+
     .cursor {
         display: none;
     }
