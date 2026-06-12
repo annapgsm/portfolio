@@ -43,6 +43,19 @@ if (nav) {
 }
 
 /* =========================================================
+   2. MOBILE NAV
+   - Toggle mobile menu open/closed
+   - Adds/removes the .active class on click
+   ========================================================= */
+
+const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+mobileMenuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active");
+});
+
+/* =========================================================
    3. REVEAL ON SCROLL
    - Reveals sections/cards when they enter the viewport
    - Uses IntersectionObserver for better performance
@@ -69,3 +82,4 @@ if (revealElements.length > 0) {
         revealObserver.observe(element);
     });
 }
+

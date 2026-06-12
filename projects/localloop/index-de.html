@@ -1,5 +1,6 @@
+```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,6 +15,7 @@
 
         <link rel="stylesheet" href="../styles/global.css"/>
         <link rel="icon" type="image/png" href="../../assets/favicon/favicon.png">
+
     </head>
 
     <body>
@@ -21,8 +23,16 @@
 
         <nav id="nav">
             <div class="nav-inner">
-                <a href="../../index.html" class="nav-logo">anna.pingsmann<span class="nav-logo-suffix">_dev</span></a>
-                <a href="../../index.html" class="nav-back">← Back to portfolio</a>
+                <a href="../../index-de.html" class="nav-logo">anna.pingsmann<span class="nav-logo-suffix">_dev</span></a>
+
+                <div class="nav-right">
+                    <a href="../../index-de.html#projects" class="nav-back">← Zurück zum Portfolio</a>
+                    <div class="lang-switch">
+                        <a href="index.html">EN</a>
+                        <span>/</span>
+                        <a href="index-de.html" class="active">DE</a>
+                    </div>
+                </div>
             </div>
         </nav>
 
@@ -37,9 +47,10 @@
                     <h1 class="project-title">Local Loop</h1>
 
                     <p class="project-desc">
-                        A real-time mobile chat app focused on how local groups communicate through messaging, media, and location.
+                        Ein mobiler Echtzeit-Chat für lokale Gruppen; mit Nachrichten, Fotos, Standortfreigabe und Offline-Zugriff.
                     </p>
-                        <div class="project-header-grid">
+
+                    <div class="project-header-grid">
                         <div class="tech-stack">
                             <span class="tech-tag">React Native</span>
                             <span class="tech-tag">Expo</span>
@@ -50,9 +61,8 @@
                         </div>
 
                         <div class="project-links">
-
                             <a href="https://github.com/annapgsm/localLoop" class="project-link" target="_blank" rel="noopener">
-                                <span class="project-link-label">Source code </span>
+                                <span class="project-link-label">Source Code</span>
                                 <span class="project-link-icon">↗</span>
                             </a>
                         </div>
@@ -63,62 +73,61 @@
             <section id="carousel-section">
                 <div class="carousel-wrapper">
                     <div class="carousel-container">
-
                         <div class="carousel-single">
                             <img
                                 src="../../assets/projects/localloop/mockup_detail.png"
-                                alt="LocalLoop chat app preview"
+                                alt="Vorschau der Local Loop Chat-App"
                             />
                         </div>
-
                     </div>
                 </div>
             </section>
 
             <section id="features">
                 <div class="container">
-                    <span class="section-label">Core Features</span>
-                    <h2 class="section-title">A Mobile Chat Experience for Real-World Use</h2>
+                    <span class="section-label">Funktionen</span>
+                    <h2 class="section-title">Eine mobile Chat-Erfahrung für reale Nutzungssituationen.</h2>
+
                     <div class="features-grid">
                         <article class="feature-card">
-                            <h3 class="feature-title">Real-Time Chat</h3>
+                            <h3 class="feature-title">Echtzeit-Chat</h3>
                             <p class="feature-desc">
-                                Messages update instantly with Firestore listeners, helping small local groups stay connected.
+                                Nachrichten werden über Firestore Listener sofort aktualisiert, damit kleine lokale Gruppen einfach in Verbindung bleiben können.
                             </p>
                         </article>
 
                         <article class="feature-card">
-                            <h3 class="feature-title">Offline Access</h3>
+                            <h3 class="feature-title">Offline-Zugriff</h3>
                             <p class="feature-desc">
-                                Conversations are cached locally, so users can still read recent updates when their connection drops.
+                                Unterhaltungen werden lokal zwischengespeichert, sodass aktuelle Nachrichten auch bei instabiler Verbindung lesbar bleiben.
                             </p>
                         </article>
 
                         <article class="feature-card">
-                            <h3 class="feature-title">Photo Sharing</h3>
+                            <h3 class="feature-title">Fotos teilen</h3>
                             <p class="feature-desc">
-                                Users can share quick visual updates, from a lost item to a notice in the building or a nearby event.
+                                Nutzerinnen und Nutzer können schnelle visuelle Updates teilen – von einem verlorenen Gegenstand bis zu einem Aushang im Haus oder einem Event in der Nähe.
                             </p>
                         </article>
 
                         <article class="feature-card">
-                            <h3 class="feature-title">Location Sharing</h3>
+                            <h3 class="feature-title">Standort teilen</h3>
                             <p class="feature-desc">
-                                Current location can be shared, previewed in chat, and opened directly in Google Maps.
+                                Der aktuelle Standort kann geteilt, direkt im Chat angezeigt und anschließend in Google Maps geöffnet werden.
                             </p>
                         </article>
 
                         <article class="feature-card">
-                            <h3 class="feature-title">Connection-Aware UI</h3>
+                            <h3 class="feature-title">Verbindungsbewusste UI</h3>
                             <p class="feature-desc">
-                                The app detects network changes and switches between live updates and cached content automatically.
+                                Die App erkennt Netzwerkänderungen und wechselt automatisch zwischen Live-Updates und zwischengespeicherten Inhalten.
                             </p>
                         </article>
 
                         <article class="feature-card">
-                            <h3 class="feature-title">Native Mobile Interactions</h3>
+                            <h3 class="feature-title">Native mobile Interaktionen</h3>
                             <p class="feature-desc">
-                                Camera, image library, location, and map features are integrated through Expo and React Native APIs.
+                                Kamera, Bildbibliothek, Standort und Kartenfunktionen sind über Expo und React Native APIs integriert.
                             </p>
                         </article>
                     </div>
@@ -129,21 +138,20 @@
                 <div class="container">
                     <div class="tech-grid">
                         <div>
-                            <span class="section-label">Technical approach</span>
-                            <h2 class="section-title">Architecture and Stack</h2>
+                            <span class="section-label">Technischer Ansatz</span>
+                            <h2 class="section-title">Architektur & Stack</h2>
 
                             <div class="tech-content">
                                 <p>
-                                    Local Loop is built with React Native and Expo, with Firebase handling authentication and data/ media storage. 
-                                    Firestore real-time listeners keep conversations in sync across devices without requiring manual refreshes.
+                                    Local Loop wurde mit React Native und Expo entwickelt. Firebase übernimmt Authentifizierung sowie Daten- und Medienspeicherung. Firestore Echtzeit-Listener halten Unterhaltungen geräteübergreifend synchron, ohne dass Nutzerinnen und Nutzer manuell aktualisieren müssen.
                                 </p>
 
                                 <p>
-                                    I also focused on mobile-specific edge cases like unstable connections, local caching, media uploads, and location sharing. 
-                                    Recent messages are stored with AsyncStorage, while NetInfo helps the app respond when the connection changes.                                
+                                    Ein besonderer Fokus lag auf mobilen Nutzungssituationen wie instabilen Verbindungen, lokalem Caching, Medien-Uploads und Standortfreigabe. Aktuelle Nachrichten werden mit AsyncStorage gespeichert, während NetInfo der App hilft, auf Verbindungsänderungen zu reagieren.
                                 </p>
                             </div>
                         </div>
+
                         <div class="tech-stack-detail">
                             <div>
                                 <div class="tech-group-label">Frontend</div>
@@ -157,12 +165,12 @@
                             </div>
 
                             <div>
-                                <div class="tech-group-label">Backend & Data</div>
+                                <div class="tech-group-label">Backend & Daten</div>
                                 <div class="tech-items">
                                     <span class="tech-item">Firebase Firestore</span>
                                     <span class="tech-item">Firebase Auth</span>
                                     <span class="tech-item">Cloud Storage</span>
-                                    <span class="tech-item">Real-time listeners</span>
+                                    <span class="tech-item">Real-time Listener</span>
                                 </div>
                             </div>
 
@@ -176,12 +184,12 @@
                             </div>
 
                             <div>
-                                <div class="tech-group-label">Infrastructure</div>
+                                <div class="tech-group-label">Infrastruktur</div>
                                 <div class="tech-items">
                                     <span class="tech-item">AsyncStorage</span>
                                     <span class="tech-item">NetInfo</span>
                                     <span class="tech-item">Expo CLI</span>
-                                    <span class="tech-item">Android / iOS Simulators</span>
+                                    <span class="tech-item">Android / iOS Simulatoren</span>
                                 </div>
                             </div>
                         </div>
@@ -191,32 +199,30 @@
 
             <section id="learnings">
                 <div class="container">
-                    <span class="section-label">What I learned</span>
-                    <h2 class="section-title">Takeaways</h2>
+                    <span class="section-label">Learnings</span>
+                    <h2 class="section-title">Erkenntnisse</h2>
 
                     <div class="learnings-list">
                         <article class="learning-item">
-                            <h3 class="learning-title">Working with real-time data</h3>
+                            <h3 class="learning-title">Mit Echtzeitdaten arbeiten</h3>
                             <p class="learning-text">
-                                Using Firestore listeners helped me understand the difference between fetching data once and keeping an interface continuously in sync.                            
+                                Die Arbeit mit Firestore Listenern hat mir geholfen, den Unterschied zwischen einmaligem Datenabruf und einer dauerhaft synchronisierten Oberfläche besser zu verstehen.
                             </p>
                         </article>
 
                         <article class="learning-item">
-                            <h3 class="learning-title">Designing for offline scenarios</h3>
+                            <h3 class="learning-title">Für Offline-Szenarien entwickeln</h3>
                             <p class="learning-text">
-                                Building offline fallback behavior showed me how important it is for mobile apps to remain useful even when the network is unreliable.                            
+                                Das Einbauen von Offline-Fallbacks hat mir gezeigt, wie wichtig es ist, dass mobile Apps auch bei unzuverlässiger Verbindung nutzbar bleiben.
                             </p>
-
                         </article>
 
                         <article class="learning-item">
-                            <h3 class="learning-title">Connecting to native device features</h3>
+                            <h3 class="learning-title">Native Gerätefunktionen anbinden</h3>
                             <p class="learning-text">
-                                Working with camera, image library, and location APIs gave me a better understanding of how React Native connects app logic to real device capabilities.                            
+                                Die Arbeit mit Kamera-, Bildbibliothek- und Standort-APIs hat mir ein besseres Verständnis dafür gegeben, wie React Native App-Logik mit echten Gerätefunktionen verbindet.
                             </p>
                         </article>
-                    
                     </div>
                 </div>
             </section>
@@ -224,7 +230,7 @@
 
         <footer>
             <div class="footer-inner">
-                <a href="../../index.html" class="footer-back">← Back to all projects</a>
+                <a href="../../index-de.html#projects" class="footer-back">← Zurück zur Übersicht</a>
                 <span class="footer-credits">Built by Anna Pingsmann</span>
             </div>
         </footer>
@@ -232,3 +238,4 @@
         <script src="../script.js"></script>
     </body>
 </html>
+```

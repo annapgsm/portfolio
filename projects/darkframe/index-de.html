@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,8 +11,7 @@
             href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
             rel="stylesheet"
         />
-
-        <link rel="stylesheet" href="../styles/global.css"> />
+        <link rel="stylesheet" href="../styles/global.css" />
         <link rel="icon" type="image/png" href="../../assets/favicon/favicon.png">
     </head>
 
@@ -21,14 +20,14 @@
 
         <nav id="nav">
             <div class="nav-inner">
-                <a href="../../index.html" class="nav-logo">anna.pingsmann<span class="nav-logo-suffix">_dev</span></a>
+                <a href="../../index-de.html" class="nav-logo">anna.pingsmann<span class="nav-logo-suffix">_dev</span></a>
 
                 <div class="nav-right">
-                    <a href="../../index.html" class="nav-back">← Back to portfolio</a>
+                    <a href="../../index-de.html#projects" class="nav-back">← Zurück zum Portfolio</a>
                     <div class="lang-switch">
-                        <a href="index.html" class="active">EN</a>
+                        <a href="index.html">EN</a>
                         <span>/</span>
-                        <a href="index-de.html">DE</a>
+                        <a href="index-de.html" class="active">DE</a>
                     </div>
                 </div>
             </div>
@@ -39,13 +38,13 @@
                 <div class="container">
                     <div class="project-meta">
                         <span class="project-meta-dot"></span>
-                        <span>Full-Stack Project · 2026</span>
+                        <span>Full-Stack-Projekt · 2026</span>
                     </div>
 
                     <h1 class="project-title">Dark Frame</h1>
 
                     <p class="project-desc">
-                        A movie discovery app built with React and a custom API, combining search, authentication, and persistent user data.
+                        Eine Movie-Discovery-App mit React und eigener API, gebaut rund um Suche, Login und gespeicherte Nutzerdaten.
                     </p>
 
                     <div class="project-header-grid">
@@ -60,18 +59,18 @@
                         </div>
 
                         <div class="project-links">
-                            <a href="https://job-tracker-five-zeta.vercel.app" class="project-link" target="_blank" rel="noopener">
-                                <span class="project-link-label">Live demo</span>
+                            <a href="https://darkframe.netlify.app" class="project-link" target="_blank" rel="noopener">
+                                <span class="project-link-label">Live Demo</span>
                                 <span class="project-link-icon">↗</span>
                             </a>
 
                             <a href="https://github.com/annapgsm/darkframe-client" class="project-link" target="_blank" rel="noopener">
-                                <span class="project-link-label">Source code (Client)  </span>
+                                <span class="project-link-label">Source Code Client</span>
                                 <span class="project-link-icon">↗</span>
                             </a>
 
                             <a href="https://github.com/annapgsm/darkframe-api" class="project-link" target="_blank" rel="noopener">
-                                <span class="project-link-label">Source code (API)</span>
+                                <span class="project-link-label">Source Code API</span>
                                 <span class="project-link-icon">↗</span>
                             </a>
                         </div>
@@ -86,31 +85,30 @@
                             <div class="carousel-slide">
                                 <img
                                     src="../../assets/projects/darkframe/home.png"
-                                    alt="Dark Frame Home View"
+                                    alt="Dark Frame Startansicht"
                                 />
                             </div>
-
 
                             <div class="carousel-slide">
                                 <img
                                     src="../../assets/projects/darkframe/detail.png"
-                                    alt="Dark Frame Movie Detail View"
+                                    alt="Dark Frame Detailansicht eines Films"
                                 />
                             </div>
 
                             <div class="carousel-slide">
                                 <img
                                     src="../../assets/projects/darkframe/profile.png"
-                                    alt="Dark Frame Profile View"
+                                    alt="Dark Frame Profilansicht"
                                 />
                             </div>
                         </div>
 
-                        <button class="carousel-btn carousel-btn-prev" id="prevBtn" aria-label="Previous screenshot">
+                        <button class="carousel-btn carousel-btn-prev" id="prevBtn" aria-label="Vorheriger Screenshot">
                             «
                         </button>
                             
-                        <button class="carousel-btn carousel-btn-next" id="nextBtn" aria-label="Next screenshot">
+                        <button class="carousel-btn carousel-btn-next" id="nextBtn" aria-label="Nächster Screenshot">
                             »
                         </button>
                     </div>
@@ -119,72 +117,72 @@
                         <button class="carousel-thumb active" data-index="0">
                             <img
                                 src="../../assets/projects/darkframe/home.png"
-                                alt="Thumbnail of DarkFrame Overview"
+                                alt="Thumbnail der Dark Frame Übersicht"
                             />
                         </button>
 
                         <button class="carousel-thumb" data-index="1">
                             <img
                                 src="../../assets/projects/darkframe/detail.png"
-                                alt="Thumbnail of Dark Frame Movie Detail View"
+                                alt="Thumbnail der Dark Frame Detailansicht"
                             />
                         </button>
 
                         <button class="carousel-thumb" data-index="2">
                             <img
                                 src="../../assets/projects/darkframe/profile.png"
-                                alt="Thumbnail of Dark Frame Profile View"
+                                alt="Thumbnail der Dark Frame Profilansicht"
                             />
                         </button>
-
                     </div>
                 </div>
             </section>
 
             <section id="features">
                 <div class="container">
-                    <span class="section-label">Core Features</span>
-                    <h2 class="section-title">Fast search and personalized movie libraries.</h2>
+                    <span class="section-label">Funktionen</span>
+                    <h2 class="section-title">Schnelle Suche und persönliche Filmlisten.</h2>
 
                     <div class="features-grid">
                         <article class="feature-card">
-                            <h3 class="feature-title">Real-Time Search</h3>
+                            <h3 class="feature-title">Live-Suche</h3>
                             <p class="feature-desc">
-                                Search updates instantly as users type, making movie discovery fast and frictionless.
-                        </article>
-
-                        <article class="feature-card">
-                            <h3 class="feature-title">Authentication Flow</h3>
-                            <p class="feature-desc">
-                                Users can register, log in, and access protected views through secure JWT-based authentication.
+                                Die Suche reagiert direkt beim Tippen und macht das Entdecken von Filmen schnell und unkompliziert.
                             </p>
                         </article>
 
                         <article class="feature-card">
-                            <h3 class="feature-title">Persistent Favorites</h3>
+                            <h3 class="feature-title">Login und Registrierung</h3>
                             <p class="feature-desc">
-                                Favorite movies are stored in the database, creating a personalized experience across sessions.
+                                Nutzer können sich registrieren, einloggen und geschützte Bereiche über JWT-basierte Authentifizierung nutzen.
                             </p>
                         </article>
 
                         <article class="feature-card">
-                            <h3 class="feature-title">Structured Data Rendering</h3>
+                            <h3 class="feature-title">Gespeicherte Favoriten</h3>
                             <p class="feature-desc">
-                                Each movie includes genre, director, and descriptive metadata to support deeper exploration.                            
+                                Lieblingsfilme werden in der Datenbank gespeichert und bleiben auch über verschiedene Sessions hinweg erhalten.
                             </p>
                         </article>
 
                         <article class="feature-card">
-                            <h3 class="feature-title">API Driven Frontend</h3>
+                            <h3 class="feature-title">Strukturierte Filmdaten</h3>
                             <p class="feature-desc">
-                                All content and user actions are connected to a REST API, linking the interface directly to backend data.
+                                Jeder Film enthält Informationen zu Genre, Regie und Beschreibung, damit Nutzer gezielter stöbern können.
                             </p>
                         </article>
 
                         <article class="feature-card">
-                            <h3 class="feature-title">Reusable Component Structure</h3>
+                            <h3 class="feature-title">Frontend mit API-Anbindung</h3>
                             <p class="feature-desc">
-                                The interface is built from modular components, making the application easier to maintain and extend.
+                                Inhalte und Nutzeraktionen sind mit einer REST API verbunden, sodass die Oberfläche direkt mit Backend-Daten arbeitet.
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <h3 class="feature-title">Wiederverwendbare Komponenten</h3>
+                            <p class="feature-desc">
+                                Die Oberfläche ist aus modularen Komponenten aufgebaut, damit die Anwendung einfacher zu warten und zu erweitern bleibt.
                             </p>
                         </article>
                     </div>
@@ -195,19 +193,16 @@
                 <div class="container">
                     <div class="tech-grid">
                         <div>
-                            <span class="section-label">Technical approach</span>
-                            <h2 class="section-title">Architecture and Stack</h2>
+                            <span class="section-label">Technischer Ansatz</span>
+                            <h2 class="section-title">Architektur & Stack</h2>
 
                             <div class="tech-content">
                                 <p>
-                                    DarkFrame is built as a single-page application with a clear separation between frontend and backend.
-                                    The React client handles the interface, routing, and user interactions, while all data is loaded from a REST API.
-                                    This keeps the app fast and responsive, with updates happening instantly without full page reloads.
+                                    Dark Frame ist als Single-Page-Application mit klarer Trennung zwischen Frontend und Backend aufgebaut. Der React Client übernimmt Interface, Routing und Nutzerinteraktionen, während alle Daten über eine REST API geladen werden.
                                 </p>
 
                                 <p>
-                                    On the backend, the API is structured into routes and data models to keep the codebase easy to extend.
-                                    MongoDB stores user and movie data, while JWT authentication is used to securely manage user sessions.
+                                    Im Backend ist die API in Routen und Datenmodelle strukturiert, damit die Codebase erweiterbar bleibt. MongoDB speichert Film- und Nutzerdaten, während JWT für geschützte Sessions und nutzerspezifische Inhalte genutzt wird.
                                 </p>
                             </div>
                         </div>
@@ -262,32 +257,30 @@
 
             <section id="learnings">
                 <div class="container">
-                    <span class="section-label">What I learned</span>
-                    <h2 class="section-title">Takeaways</h2>
+                    <span class="section-label">Learnings</span>
+                    <h2 class="section-title">Erkenntnisse</h2>
 
                     <div class="learnings-list">
                         <article class="learning-item">
-                            <h3 class="learning-title">Full-Stack Integration</h3>
+                            <h3 class="learning-title">Frontend und Backend verbinden</h3>
                             <p class="learning-text">
-                                Building both frontend and backend gave me a clearer understanding of how interface decisions, API design, and database updates work together.
+                                Durch die Arbeit an beiden Seiten der Anwendung habe ich besser verstanden, wie Interface-Entscheidungen, API-Struktur und Datenbank-Updates zusammenspielen.
                             </p>
                         </article>
 
                         <article class="learning-item">
-                            <h3 class="learning-title">Authentication & User Sessions</h3>
+                            <h3 class="learning-title">Authentifizierung und Sessions</h3>
                             <p class="learning-text">
-                                Implementing JWT authentication helped me understand how protected routes, validation, and user-specific data need to work together across the stack.
+                                Die Umsetzung mit JWT hat mir gezeigt, wie geschützte Routen, Validierung und nutzerspezifische Daten über den gesamten Stack zusammenarbeiten müssen.
                             </p>
-
                         </article>
 
                         <article class="learning-item">
-                            <h3 class="learning-title">Structuring for Maintainablility</h3>
+                            <h3 class="learning-title">Struktur für bessere Wartbarkeit</h3>
                             <p class="learning-text">
-                                Working on both sides of the application reinforced the importance of clear structure and separation of concerns when building features that can scale.
+                                Die Arbeit an Frontend und Backend hat mir gezeigt, wie wichtig klare Strukturen und getrennte Verantwortlichkeiten sind, wenn eine Anwendung wachsen soll.
                             </p>
                         </article>
-                    
                     </div>
                 </div>
             </section>
@@ -295,7 +288,7 @@
 
         <footer>
             <div class="footer-inner">
-                <a href="../../index.html" class="footer-back">← Back to all projects</a>
+                <a href="../../index-de.html#projects" class="footer-back">← Zurück zur Übersicht</a>
                 <span class="footer-credits">Built by Anna Pingsmann</span>
             </div>
         </footer>

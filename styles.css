@@ -185,6 +185,109 @@ nav.scrolled {
     opacity: 0.85;
 }
 
+.mobile-menu-btn,
+.mobile-nav-links {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        width: 36px;
+        height: 36px;
+        background: transparent;
+        border: 1px solid var(--rule);
+        border-radius: 8px;
+        cursor: pointer;
+        z-index: 200;
+    }
+
+    .mobile-menu-btn span {
+        width: 16px;
+        height: 1px;
+        background: var(--ink);
+        display: block;
+        margin: 0 auto;
+    }
+
+    .mobile-nav-links {
+        position: fixed;
+        top: 64px;
+        left: 0;
+        right: 0;
+
+        display: none;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 0.4rem;
+        padding: 1.5rem 0;
+
+        background: var(--bg);
+        border-bottom: 1px solid var(--rule);
+
+        list-style: none;
+        z-index: 150;
+    }
+
+    .mobile-nav-links.active {
+        display: flex;
+    }
+
+
+    .mobile-nav-links a {
+        color: var(--ink);
+        font-size: 1rem;
+        font-family: var(--sans);
+    }
+
+    .mobile-lang-switch {
+        display: flex;
+        align-items: center;
+        gap: 0.35rem;
+        margin-top: 0.15rem;
+        font-family: var(--mono);
+        font-size: 12px;
+        color: var(--ink-3);
+    }
+
+    .mobile-lang-switch a {
+        font-family: var(--mono);
+        font-size: 12px;
+        color: var(--ink-3);
+    }
+
+    .mobile-lang-switch a.active {
+        color: var(--ink);
+    }
+}
+
+.lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--ink-3);
+}
+
+.lang-switch a {
+    color: var(--ink-3);
+    transition: color 0.15s;
+}
+
+.lang-switch a:hover,
+.lang-switch a.active {
+    color: var(--ink);
+}
+
 /* =========================================================
    5. HERO SECTION
    - Intro section at the top
@@ -399,7 +502,7 @@ nav.scrolled {
 
 .section-title {
     font-family: var(--serif);
-    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-size: clamp(1.5rem, 2.5vw, 2.2rem);
     line-height: 1.1;
     letter-spacing: -0.02em;
 }
@@ -583,6 +686,33 @@ nav.scrolled {
     background: var(--blue-bg);
     color: var(--blue);
 }
+/* =========================================================
+   CLICKABLE PROJECT CARDS
+   - Invisible overlay link makes the full card clickable
+   - Individual links stay clickable above the overlay
+   ========================================================= */
+   
+.card-overlay-link {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    border-radius: inherit;
+}
+
+.card-overlay-link:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+}
+
+.card-links {
+    position: relative;
+    z-index: 2;
+}
+
+.project-card {
+    cursor: pointer;
+}
+
 /* =========================================================
    10. SKILLS SECTION
    - Two-column layout
@@ -1013,16 +1143,15 @@ footer {
 
 @media (max-width: 768px) {
 
+    .nav-inner {
+        height: 64px;
+    }
     .hero-headline {
         margin-bottom: 6rem;
         margin-top: 2rem;
     }
 
     .cursor {
-        display: none;
-    }
-
-    .nav-links {
         display: none;
     }
 
