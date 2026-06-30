@@ -19,10 +19,20 @@
     <body>
         <div class="cursor" id="cursor"></div>
 
+
         <nav id="nav">
             <div class="nav-inner">
                 <a href="../../index.html" class="nav-logo">anna.pingsmann<span class="nav-logo-suffix">_dev</span></a>
-                <a href="../../index.html" class="nav-back">← Back to portfolio</a>
+                
+                <div class="nav-right">
+
+                    <a href="../../index.html#projects" class="nav-back">← Back to portfolio</a>
+                    <div class="lang-switch">
+                        <a href="index.html" class="active">EN</a>
+                        <span>/</span>
+                        <a href="index-de.html">DE</a>
+                    </div>
+                </div>
             </div>
         </nav>
 
@@ -37,7 +47,8 @@
                     <h1 class="project-title">Local Loop</h1>
 
                     <p class="project-desc">
-                        A real-time mobile chat app focused on how local groups communicate through messaging, media, and location.
+                        A cross-platform mobile chat app for local groups, built with React Native, Expo and Firebase. </br>
+                        Users can join with anonymous authentication, exchange real-time messages, share photos and location data, and keep recent conversations available offline through local caching.
                     </p>
                         <div class="project-header-grid">
                         <div class="tech-stack">
@@ -52,7 +63,7 @@
                         <div class="project-links">
 
                             <a href="https://github.com/annapgsm/localLoop" class="project-link" target="_blank" rel="noopener">
-                                <span class="project-link-label">Source code </span>
+                                <span class="project-link-label">GitHub</span>
                                 <span class="project-link-icon">↗</span>
                             </a>
                         </div>
@@ -67,7 +78,7 @@
                         <div class="carousel-single">
                             <img
                                 src="../../assets/projects/localloop/mockup_detail.png"
-                                alt="LocalLoop chat app preview"
+                                alt="Local Loop chat app preview"
                             />
                         </div>
 
@@ -83,35 +94,35 @@
                         <article class="feature-card">
                             <h3 class="feature-title">Real-Time Chat</h3>
                             <p class="feature-desc">
-                                Messages update instantly with Firestore listeners, helping small local groups stay connected.
+                                Messages update instantly through Firestore listeners, helping small local groups stay connected without manual refreshes.
                             </p>
                         </article>
 
                         <article class="feature-card">
                             <h3 class="feature-title">Offline Access</h3>
                             <p class="feature-desc">
-                                Conversations are cached locally, so users can still read recent updates when their connection drops.
+                                Recent conversations are cached locally with AsyncStrorage, so users can still read recent updates when their connection drops.
                             </p>
                         </article>
 
                         <article class="feature-card">
                             <h3 class="feature-title">Photo Sharing</h3>
                             <p class="feature-desc">
-                                Users can share quick visual updates, from a lost item to a notice in the building or a nearby event.
+                                Users can share images from their camera or media library, with uploads stored through Firebase Cloud Storage.
                             </p>
                         </article>
 
                         <article class="feature-card">
                             <h3 class="feature-title">Location Sharing</h3>
                             <p class="feature-desc">
-                                Current location can be shared, previewed in chat, and opened directly in Google Maps.
+                                Current location can be shared, previewed on a map, and opened directly in Google Maps.
                             </p>
                         </article>
 
                         <article class="feature-card">
                             <h3 class="feature-title">Connection-Aware UI</h3>
                             <p class="feature-desc">
-                                The app detects network changes and switches between live updates and cached content automatically.
+                                The app detects network changes with NetInfo and switches between live updates and cached content automatically.
                             </p>
                         </article>
 
@@ -134,13 +145,13 @@
 
                             <div class="tech-content">
                                 <p>
-                                    Local Loop is built with React Native and Expo, with Firebase handling authentication and data/ media storage. 
-                                    Firestore real-time listeners keep conversations in sync across devices without requiring manual refreshes.
+                                    Local Loop is built with React Native and Expo, with Firebase handling anonymous authentication, real-time messaging, and media storage. 
+                                    Firestore listeners keep conversations synchronized across devices, while Firebase Cloud Storage stores uploaded images.
                                 </p>
 
                                 <p>
-                                    I also focused on mobile-specific edge cases like unstable connections, local caching, media uploads, and location sharing. 
-                                    Recent messages are stored with AsyncStorage, while NetInfo helps the app respond when the connection changes.                                
+                                    The project also focuses on mobile-specific edge cases such as unstable connections, offline access, media uploads, and location sharing. 
+                                    Recent messages are cached locally with AsyncStorage, and NetInfo helps the app respond when the connection changes.                                
                                 </p>
                             </div>
                         </div>
@@ -224,7 +235,7 @@
 
         <footer>
             <div class="footer-inner">
-                <a href="../../index.html" class="footer-back">← Back to all projects</a>
+                <a href="../../index.html#projects" class="footer-back">← Back to all projects</a>
                 <span class="footer-credits">Built by Anna Pingsmann</span>
             </div>
         </footer>

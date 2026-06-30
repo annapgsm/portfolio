@@ -41,13 +41,14 @@
                 <div class="container">
                     <div class="project-meta">
                         <span class="project-meta-dot"></span>
-                        <span>Mobile App · 2026</span>
+                        <span>Mobile-App · 2026</span>
                     </div>
 
                     <h1 class="project-title">Local Loop</h1>
 
                     <p class="project-desc">
-                        Ein mobiler Echtzeit-Chat für lokale Gruppen; mit Nachrichten, Fotos, Standortfreigabe und Offline-Zugriff.
+                        Eine plattformübergreifende mobile Chat-App für lokale Gruppen, entwickelt mit React Native, Expo und Firebase. </br>
+                        Nutzer können sich anonym anmelden, Nachrichten in Echtzeit austauschen, Fotos und Standorte teilen und aktuelle Unterhaltungen durch lokales Caching auch offline lesen.    
                     </p>
 
                     <div class="project-header-grid">
@@ -57,12 +58,12 @@
                             <span class="tech-tag">Firebase</span>
                             <span class="tech-tag">Firestore</span>
                             <span class="tech-tag">AsyncStorage</span>
-                            <span class="tech-tag">Expo APIs</span>
+                            <span class="tech-tag">Expo-APIs</span>
                         </div>
 
                         <div class="project-links">
                             <a href="https://github.com/annapgsm/localLoop" class="project-link" target="_blank" rel="noopener">
-                                <span class="project-link-label">Source Code</span>
+                                <span class="project-link-label">GitHub</span>
                                 <span class="project-link-icon">↗</span>
                             </a>
                         </div>
@@ -86,48 +87,48 @@
             <section id="features">
                 <div class="container">
                     <span class="section-label">Funktionen</span>
-                    <h2 class="section-title">Eine mobile Chat-Erfahrung für reale Nutzungssituationen.</h2>
+                    <h2 class="section-title">Eine mobile Chat- App für reale Nutzungssituationen.</h2>
 
                     <div class="features-grid">
                         <article class="feature-card">
                             <h3 class="feature-title">Echtzeit-Chat</h3>
                             <p class="feature-desc">
-                                Nachrichten werden über Firestore Listener sofort aktualisiert, damit kleine lokale Gruppen einfach in Verbindung bleiben können.
+                                Nachrichten werden über Firestore Listener sofort aktualisiert, damit kleine lokale Gruppen ohne manuelles Aktualisieren in Verbindung bleiben können.
                             </p>
                         </article>
 
                         <article class="feature-card">
                             <h3 class="feature-title">Offline-Zugriff</h3>
                             <p class="feature-desc">
-                                Unterhaltungen werden lokal zwischengespeichert, sodass aktuelle Nachrichten auch bei instabiler Verbindung lesbar bleiben.
+                                Aktuelle Unterhaltungen werden mit AsyncStorage lokal zwischengespeichert, sodass Nutzer auch bei instabiler Verbindung frühere Nachrichten lesen können.
                             </p>
                         </article>
 
                         <article class="feature-card">
                             <h3 class="feature-title">Fotos teilen</h3>
                             <p class="feature-desc">
-                                Nutzerinnen und Nutzer können schnelle visuelle Updates teilen – von einem verlorenen Gegenstand bis zu einem Aushang im Haus oder einem Event in der Nähe.
+                                Nutzer können Bilder aus der Kamera oder Mediathek teilen. Uploads werden über Firebase Cloud Storage gespeichert. 
                             </p>
                         </article>
 
                         <article class="feature-card">
                             <h3 class="feature-title">Standort teilen</h3>
                             <p class="feature-desc">
-                                Der aktuelle Standort kann geteilt, direkt im Chat angezeigt und anschließend in Google Maps geöffnet werden.
+                                Der aktuelle Standort kann im Chat geteilt, auf einer Karte angezeigt und direkt in Google Maps geöffnet werden.
                             </p>
                         </article>
 
                         <article class="feature-card">
-                            <h3 class="feature-title">Verbindungsbewusste UI</h3>
+                            <h3 class="feature-title">An instabile Verbindungen angepasst</h3>
                             <p class="feature-desc">
                                 Die App erkennt Netzwerkänderungen und wechselt automatisch zwischen Live-Updates und zwischengespeicherten Inhalten.
                             </p>
                         </article>
 
                         <article class="feature-card">
-                            <h3 class="feature-title">Native mobile Interaktionen</h3>
+                            <h3 class="feature-title">Native Gerätefunktionen</h3>
                             <p class="feature-desc">
-                                Kamera, Bildbibliothek, Standort und Kartenfunktionen sind über Expo und React Native APIs integriert.
+                                Kamera, Mediathek, Standort und Kartenfunktionen sind über Expo- und React-Native-APIs integriert.
                             </p>
                         </article>
                     </div>
@@ -143,7 +144,7 @@
 
                             <div class="tech-content">
                                 <p>
-                                    Local Loop wurde mit React Native und Expo entwickelt. Firebase übernimmt Authentifizierung sowie Daten- und Medienspeicherung. Firestore Echtzeit-Listener halten Unterhaltungen geräteübergreifend synchron, ohne dass Nutzerinnen und Nutzer manuell aktualisieren müssen.
+                                    Local Loop wurde mit React Native und Expo entwickelt. Firebase übernimmt anonyme Authentifizierung, Echtzeitnachrichten und Medienspeicherung. Firestore-Listener halten Unterhaltungen geräteübergreifend synchron, ohne dass Nutzerinnen und Nutzer manuell aktualisieren müssen.
                                 </p>
 
                                 <p>
@@ -169,8 +170,8 @@
                                 <div class="tech-items">
                                     <span class="tech-item">Firebase Firestore</span>
                                     <span class="tech-item">Firebase Auth</span>
-                                    <span class="tech-item">Cloud Storage</span>
-                                    <span class="tech-item">Real-time Listener</span>
+                                    <span class="tech-item">Firebase Cloud Storage</span>
+                                    <span class="tech-item">Echtzeit-Listener</span>
                                 </div>
                             </div>
 
@@ -231,7 +232,7 @@
         <footer>
             <div class="footer-inner">
                 <a href="../../index-de.html#projects" class="footer-back">← Zurück zur Übersicht</a>
-                <span class="footer-credits">Built by Anna Pingsmann</span>
+                <span class="footer-credits">Entwickelt von Anna Pingsmann</span>
             </div>
         </footer>
 

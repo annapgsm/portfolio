@@ -46,7 +46,8 @@
                     <h1 class="project-title">Job Tracker</h1>
 
                     <p class="project-desc">
-                        A full-stack application that brings structure to the job search process, from saved roles to final offers.
+                        A full-stack job application tracker designed to bring structure to the job search process, from saved roles to final offers.                    
+                        Users can manage applications through an interactive Kanban workflow with drag-and-drop status updates, switch to a detailed table view, archive older entries, and keep their data synced through a custom REST API and MongoDB backend.
                     </p>
 
                     <div class="project-header-grid">
@@ -65,7 +66,7 @@
                             </a>
 
                             <a href="https://github.com/annapgsm/job-tracker" class="project-link" target="_blank" rel="noopener">
-                                <span class="project-link-label">Source code</span>
+                                <span class="project-link-label">GitHub</span>
                                 <span class="project-link-icon">↗</span>
                             </a>
                         </div>
@@ -148,48 +149,48 @@
             <section id="features">
                 <div class="container">
                     <span class="section-label">Core Features</span>
-                    <h2 class="section-title">Turn a scattered job search into a clear, structured process.</h2>
+                    <h2 class="section-title">Turn a scattered job search into one clear workflow.</h2>
 
                     <div class="features-grid">
                         <article class="feature-card">
-                            <h3 class="feature-title">Kanban workflow with drag & drop</h3>
+                            <h3 class="feature-title">Kanban Workflow with Drag & Drop</h3>
                             <p class="feature-desc">
-                                Move applications between stages with drag and drop, with changes reflected instantly in the UI and synced to the database.
+                                Move applications between stages with drag and drop, with changes reflected instantly in the UI and synced to the database through the backend API.
                             </p>
                         </article>
 
                         <article class="feature-card">
-                            <h3 class="feature-title">Board and table views</h3>
+                            <h3 class="feature-title">Board and Table Views</h3>
                             <p class="feature-desc">
-                                Switch between a visual board and a structured table depending on whether you want a quick overview or a more detailed comparison.
+                                Switch between a visual Kanban board and a structured table view, depending on whether you want a quick overview or a more detailed comparison.
                             </p>
                         </article>
 
                         <article class="feature-card">
-                            <h3 class="feature-title">Optimistic UI updates</h3>
+                            <h3 class="feature-title">Optimistic UI Updates</h3>
                             <p class="feature-desc">
-                                Interactions feel immediate by updating the interface first, while changes are confirmed with the backend in the background.
+                                Status changes feel immediate through optimistic updates, while the backend request runs in the background. If something fails, the previous state can be restored.
                             </p>
                         </article>
 
                         <article class="feature-card">
-                            <h3 class="feature-title">Smart search & filtering</h3>
+                            <h3 class="feature-title">Search, Filtering and Active Views</h3>
                             <p class="feature-desc">
-                                Quickly narrow down applications through responsive search and status filters, without duplicating data across views.
+                                Search and filter active applications by relevant criteria, with board and table views reading from the same central dataset.
                             </p>
                         </article>
 
                         <article class="feature-card">
-                            <h3 class="feature-title">Archive instead of delete</h3>
+                            <h3 class="feature-title">Archive Instead of Delete</h3>
                             <p class="feature-desc">
-                                Archive applications instead of deleting them immediately, making it easier to clean up the workspace without losing important data.
+                                Archive older or inactive applications instead of deleting completely, keeping the workspace clean without losing important data.
                             </p>
                         </article>
 
                         <article class="feature-card">
-                            <h3 class="feature-title">Fully responsive across devices</h3>
+                            <h3 class="feature-title">Responsive Interaction Design</h3>
                             <p class="feature-desc">
-                                Designed to work smoothly across desktop and mobile, with layouts and interactions adapted for smaller screens.
+                                Designed for desktop and smaller screens, including adapted touch behavior for mobile drag-and-drop interactions.                            
                             </p>
                         </article>
                     </div>
@@ -205,14 +206,18 @@
 
                             <div class="tech-content">
                                 <p>
-                                    The application is built as a seperated full-stack application, with a React frontend and a Node.js and Express API backed by MongoDB.
-                                    Frontend and backend are deployed independently, reflecting a more realistic production setup.
+                                    The application is built as a separated full-stack application, with a React frontend and a Node.js and Express API backed by MongoDB.
+                                    The frontend and backend are deployed independently, reflecting a more realistic production setup.
                                 </p>
 
                                 <p>
-                                    On the frontend, state is managed centrally and filtered views are derived from the same dataset, which keeps the UI consistent across the board, table, and archive flows. 
-                                    To make the experience feel fast and responsive, updates are handled optimistically and then synchronized with the backend.
-                                </p>                    
+                                    On the frontend, the application uses a central jobs state as the single source of truth. The Kanban board, table view, search, filters, and archive logic are derived from the same dataset, which keeps the UI consistent across different views.
+                                </p>            
+                                
+                                <p>
+                                    Status updates are handled optimistically: the interface updates immediately, while the backend request runs in the background. 
+                                    This makes the app feel faster while still keeping the frontend and database synchronized.
+                                </p>
 
                             </div>
                         </div>
@@ -226,6 +231,7 @@
                                     <span class="tech-item">CSS</span>
                                     <span class="tech-item">Vite</span>
                                     <span class="tech-item">Responsive Design</span>
+                                    <span class="tech-item">Drag & Drop</span>
                                 </div>
                             </div>
 
@@ -236,7 +242,6 @@
                                     <span class="tech-item">Express</span>
                                     <span class="tech-item">MongoDB</span>
                                     <span class="tech-item">REST API</span>
-                                    <span class="tech-item">Drag & Drop</span>
                                 </div>
                             </div>
 

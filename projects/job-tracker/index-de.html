@@ -45,7 +45,8 @@
                     <h1 class="project-title">Job Tracker</h1>
 
                     <p class="project-desc">
-                        Ein Full-Stack-Tool, das Struktur und Übersicht in den Bewerbungsprozess bringt. 
+                        Eine Full-Stack-Anwendung zur Organisation von Bewerbungen, Follow-ups und Bewerbungsphasen in einem klar strukturierten Workflow.
+                        Nutzer können Bewerbungen über einen interaktiven Kanban-Workflow per Drag & Drop verwalten, in eine detaillierte Tabellenansicht wechseln, ältere Einträge archivieren und ihre Daten über eine eigene REST API und ein MongoDB-Backend synchron halten.                    
                     </p>
 
                     <div class="project-header-grid">
@@ -54,7 +55,7 @@
                             <span class="tech-tag">Node.js</span>
                             <span class="tech-tag">Express</span>
                             <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">Drag and Drop</span>
+                            <span class="tech-tag">Drag & Drop</span>
                         </div>
 
                         <div class="project-links">
@@ -64,7 +65,7 @@
                             </a>
 
                             <a href="https://github.com/annapgsm/job-tracker" class="project-link" target="_blank" rel="noopener">
-                                <span class="project-link-label">Source Code</span>
+                                <span class="project-link-label">GitHub</span>
                                 <span class="project-link-icon">↗</span>
                             </a>
                         </div>
@@ -165,9 +166,10 @@
                         </article>
 
                         <article class="feature-card">
-                            <h3 class="feature-title">Schnelle, direkte Interaktionen</h3>
+                            <h3 class="feature-title">Optimistische UI-Updates</h3>
                             <p class="feature-desc">
-                                Aktionen fühlen sich sofort an, da die Oberfläche zuerst aktualisiert wird und die Daten anschließend im Hintergrund synchronisiert werden.
+                                Statusänderungen fühlen sich sofort an, weil die Oberfläche direkt aktualisiert wird, während die Anfrage an das Backend im Hintergrund läuft. 
+                                Falls etwas fehlschlägt, kann der vorherige Zustand wiederhergestellt werden.
                             </p>
                         </article>
 
@@ -204,11 +206,16 @@
 
                             <div class="tech-content">
                                 <p>
-                                    Die Anwendung ist als getrennte Full-Stack-Architektur aufgebaut, mit einem React-Frontend und einer Node.js- und Express-API auf Basis von MongoDB. Frontend und Backend werden unabhängig voneinander deployed – ähnlich wie in einer realen Produktionsumgebung.
+                                    Die Anwendung ist als separate Full-Stack-Anwendung aufgebaut, mit einem React-Frontend und einer Node.js/Express-API auf Basis von MongoDB. 
+                                    Frontend und Backend werden unabhängig voneinander bereitgestellt, ähnlich wie in einer realen Produktionsumgebung.
                                 </p>
 
                                 <p>
-                                    Im Frontend wird der State zentral verwaltet, während gefilterte Ansichten aus derselben Datenbasis abgeleitet werden. So bleibt die Oberfläche konsistent über Board-, Tabellen- und Archiv-Ansicht hinweg. Für ein schnelles Nutzergefühl werden Updates zuerst in der UI umgesetzt und anschließend mit dem Backend synchronisiert.
+                                    Im Frontend wird der State zentral verwaltet. Board, Tabellenansicht, Suche, Filter und Archivlogik werden aus derselben Datenbasis abgeleitet, wodurch die Oberfläche über alle Ansichten hinweg konsistent bleibt.
+                                </p>
+
+                                <p>
+                                   Statusupdates werden optimistisch umgesetzt: Die UI reagiert sofort, während die Backend-Anfrage im Hintergrund läuft. So fühlt sich die Anwendung schneller an, ohne die Synchronisierung zwischen Frontend und Datenbank zu verlieren. 
                                 </p>
                             </div>
                         </div>
@@ -222,6 +229,7 @@
                                     <span class="tech-item">CSS</span>
                                     <span class="tech-item">Vite</span>
                                     <span class="tech-item">Responsive Design</span>
+                                    <span class="tech-item">Drag & Drop</span>
                                 </div>
                             </div>
 
@@ -236,12 +244,11 @@
                             </div>
 
                             <div>
-                                <div class="tech-group-label">Data & Tools</div>
+                                <div class="tech-group-label">Daten & Tools</div>
                                 <div class="tech-items">
                                     <span class="tech-item">MongoDB Atlas</span>
                                     <span class="tech-item">Mongoose</span>
                                     <span class="tech-item">Axios</span>
-                                    <span class="tech-item">Drag & Drop</span>
                                     <span class="tech-item">GitHub</span>
                                     <span class="tech-item">Postman</span>
                                     <span class="tech-item">Vercel & Render</span>
@@ -286,7 +293,7 @@
         <footer>
             <div class="footer-inner">
                 <a href="../../index-de.html#projects" class="footer-back">← Zurück zur Übersicht</a>
-                <span class="footer-credits">Built by Anna Pingsmann</span>
+                <span class="footer-credits">Entwickelt von Anna Pingsmann</span>
             </div>
         </footer>
 

@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Dark Frame | Anna Pingsmann</title>
+        <title>DarkFrame | Anna Pingsmann</title>
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,7 +12,7 @@
             rel="stylesheet"
         />
 
-        <link rel="stylesheet" href="../styles/global.css"> />
+        <link rel="stylesheet" href="../styles/global.css" />
         <link rel="icon" type="image/png" href="../../assets/favicon/favicon.png">
     </head>
 
@@ -42,10 +42,11 @@
                         <span>Full-Stack Project · 2026</span>
                     </div>
 
-                    <h1 class="project-title">Dark Frame</h1>
+                    <h1 class="project-title">DarkFrame</h1>
 
                     <p class="project-desc">
-                        A movie discovery app built with React and a custom API, combining search, authentication, and persistent user data.
+                        DarkFrame is a full-stack movie discovery app for horror and thriller films, built with React on top of a custom Node/Express REST API.
+                        Users can search movies in real time, create an account, log in securely, manage a personalized favorites list, and update their profile data across sessions.
                     </p>
 
                     <div class="project-header-grid">
@@ -55,23 +56,22 @@
                             <span class="tech-tag">Express</span>
                             <span class="tech-tag">MongoDB</span>
                             <span class="tech-tag">React Router</span>
-                            <span class="tech-tag">Redux</span>
                             <span class="tech-tag">JWT</span>
                         </div>
 
                         <div class="project-links">
-                            <a href="https://job-tracker-five-zeta.vercel.app" class="project-link" target="_blank" rel="noopener">
+                            <a href="https://darkframe.netlify.app" class="project-link" target="_blank" rel="noopener">
                                 <span class="project-link-label">Live demo</span>
                                 <span class="project-link-icon">↗</span>
                             </a>
 
                             <a href="https://github.com/annapgsm/darkframe-client" class="project-link" target="_blank" rel="noopener">
-                                <span class="project-link-label">Source code (Client)  </span>
+                                <span class="project-link-label">GitHub (Client)  </span>
                                 <span class="project-link-icon">↗</span>
                             </a>
 
                             <a href="https://github.com/annapgsm/darkframe-api" class="project-link" target="_blank" rel="noopener">
-                                <span class="project-link-label">Source code (API)</span>
+                                <span class="project-link-label">GitHub (API)</span>
                                 <span class="project-link-icon">↗</span>
                             </a>
                         </div>
@@ -86,7 +86,7 @@
                             <div class="carousel-slide">
                                 <img
                                     src="../../assets/projects/darkframe/home.png"
-                                    alt="Dark Frame Home View"
+                                    alt="DarkFrame Home View"
                                 />
                             </div>
 
@@ -94,14 +94,14 @@
                             <div class="carousel-slide">
                                 <img
                                     src="../../assets/projects/darkframe/detail.png"
-                                    alt="Dark Frame Movie Detail View"
+                                    alt="DarkFrame Movie Detail View"
                                 />
                             </div>
 
                             <div class="carousel-slide">
                                 <img
                                     src="../../assets/projects/darkframe/profile.png"
-                                    alt="Dark Frame Profile View"
+                                    alt="DarkFrame Profile View"
                                 />
                             </div>
                         </div>
@@ -150,41 +150,42 @@
                         <article class="feature-card">
                             <h3 class="feature-title">Real-Time Search</h3>
                             <p class="feature-desc">
-                                Search updates instantly as users type, making movie discovery fast and frictionless.
-                        </article>
-
-                        <article class="feature-card">
-                            <h3 class="feature-title">Authentication Flow</h3>
-                            <p class="feature-desc">
-                                Users can register, log in, and access protected views through secure JWT-based authentication.
+                                Search updates instantly as users type, making horror and thriller movie discovery fast and frictionless.
                             </p>
                         </article>
 
                         <article class="feature-card">
-                            <h3 class="feature-title">Persistent Favorites</h3>
+                            <h3 class="feature-title">JWT Authentication</h3>
                             <p class="feature-desc">
-                                Favorite movies are stored in the database, creating a personalized experience across sessions.
+                                Users can register, log in, and access protected views through secure JWT-based authentication and client-side route guarding.
                             </p>
                         </article>
 
                         <article class="feature-card">
-                            <h3 class="feature-title">Structured Data Rendering</h3>
+                            <h3 class="feature-title">Persistent Favorites & Profile Data</h3>
                             <p class="feature-desc">
-                                Each movie includes genre, director, and descriptive metadata to support deeper exploration.                            
+                                Favorite movies and profile changes are stored in the database, creating a personalized experience across sessions.
+                            </p>
+                        </article>
+
+                        <article class="feature-card">
+                            <h3 class="feature-title">Movie details & Metadata</h3>
+                            <p class="feature-desc">
+                                Each movie includes genre, director, description, and image data, giving users more context while exploring the collection.
                             </p>
                         </article>
 
                         <article class="feature-card">
                             <h3 class="feature-title">API Driven Frontend</h3>
                             <p class="feature-desc">
-                                All content and user actions are connected to a REST API, linking the interface directly to backend data.
+                                Movie data, user accounts, authentication, and favorites are all connected to a REST API, linking the interface directly to backend logic.
                             </p>
                         </article>
 
                         <article class="feature-card">
                             <h3 class="feature-title">Reusable Component Structure</h3>
                             <p class="feature-desc">
-                                The interface is built from modular components, making the application easier to maintain and extend.
+                                The interface is built from reusable React components, making the application easier to maintain and extend.
                             </p>
                         </article>
                     </div>
@@ -218,7 +219,6 @@
                                 <div class="tech-items">
                                     <span class="tech-item">React</span>
                                     <span class="tech-item">React Router</span>
-                                    <span class="tech-item">Redux</span>
                                     <span class="tech-item">Bootstrap</span>
                                     <span class="tech-item">Parcel</span>
                                 </div>
@@ -282,7 +282,7 @@
                         </article>
 
                         <article class="learning-item">
-                            <h3 class="learning-title">Structuring for Maintainablility</h3>
+                            <h3 class="learning-title">Structuring for Maintainability</h3>
                             <p class="learning-text">
                                 Working on both sides of the application reinforced the importance of clear structure and separation of concerns when building features that can scale.
                             </p>
