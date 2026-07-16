@@ -18,7 +18,13 @@
             <div class="nav-inner">
                 <a href="#hero" class="nav-logo">anna.pingsmann<span class="nav-logo-suffix">_dev</span></a>
 
-                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+                <button 
+                    type="button"
+                    class="mobile-menu-btn" 
+                    id="mobileMenuBtn" 
+                    aria-label="Open menu"
+                    aria-expanded="false"
+                >
                     <span></span>
                     <span></span>
                     <span></span>
@@ -28,6 +34,16 @@
                     <li><a href="#projects">Work</a></li>
                     <li><a href="#skills">Stack</a></li>
                     <li><a href="#about">About</a></li>
+                    <li>
+                        <a
+                            href="assets/CV/annapingsmann-resume.pdf"
+                            class="nav-cv"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            CV ↗
+                        </a>
+                    </li>
                     <li><a href="#contact" class="nav-cta">Let's talk ↗</a></li>
                      <li class="lang-switch">
                         <a href="index.html" class="active">EN</a>
@@ -37,9 +53,19 @@
                 </ul>
                 
                 <ul class="mobile-nav-links" id="mobileMenu">
-                    <li><a href="#projects">Work</a></li>
+                    <li>
+                        <a href="#projects">Work</a></li>
                     <li><a href="#skills">Stack</a></li>
                     <li><a href="#about">About</a></li>
+                    <li>
+                        <a
+                            href="assets/CV/annapingsmann-resume.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            CV 
+                        </a>
+                    </li>
                     <li><a href="#contact">Contact</a></li>
 
                     <li class="mobile-lang-switch">
@@ -73,10 +99,20 @@
                     <p class="hero-meta">
                         Fluent in German, English, Japanese
                     </p>
-                    <br/>
+                    
                     <div class="hero-actions">
-                        <a href="#projects" class="btn-primary">View projects ↓</a>
-                        <a href="#contact" class="btn-secondary">Get in touch</a>
+                         <a href="#projects" class="btn-primary">
+                            View projects ↓
+                        </a>
+
+                        <a
+                            href="assets/CV/annapingsmann-resume.pdf"
+                            class="btn-secondary btn-cv"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View CV ↗
+                        </a>
                     </div>
                 </div>
             </section>
@@ -305,8 +341,9 @@
                                     <span class="skill-pill"><span class="skill-dot dot-green"></span>Node.js</span>
                                     <span class="skill-pill"><span class="skill-dot dot-green"></span>Express</span>
                                     <span class="skill-pill"><span class="skill-dot dot-green"></span>REST APIs</span>
-                                    <span class="skill-pill"><span class="skill-dot dot-green"></span>JWT/ Auth</span>
-                                    <span class="skill-pill"><span class="skill-dot dot-green"></span>JWT/ Auth</span>
+                                    <span class="skill-pill"><span class="skill-dot dot-green"></span>JWT/ Authentication</span>
+                                    <span class="skill-pill"><span class="skill-dot dot-green"></span>Mongoose</span>
+
                                 </div>
                             </div>
 
@@ -358,7 +395,8 @@
                             <h2 class="section-title">From physical spaces to digital interfaces.</h2>
                             <p class="about-text">
                                 Before moving into development, I studied architecture, where I learned to structure complex ideas, think in systems, and design with real people in mind.
-                                <br/><br/>
+                            </p>
+                            <p>
                                 Today, I bring that mindset into digital products. I build web and mobile applications with clear frontend logic, clean code, and understandable data flows. I also bring experience from international teams and communicate confidently in German, English, and Japanese.
                             </p>
                         </div>
@@ -372,9 +410,9 @@
                                 />
                             </div>
 
-                            <a href="assets/CV/anna-pingsmann-resume.pdf" class="resume-btn" target="_blank" rel="noopener">
-                                Resume
-                                <span>Open PDF →</span>
+                            <a href="assets/CV/annapingsmann-resume.pdf" class="resume-btn" target="_blank" rel="noopener">
+                                View my CV 
+                                <span>PDF ↗</span>
                             </a>
                         </div>
 

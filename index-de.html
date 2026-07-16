@@ -18,7 +18,7 @@
             <div class="nav-inner">
                 <a href="#hero" class="nav-logo">anna.pingsmann<span class="nav-logo-suffix">_dev</span></a>
 
-                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+                <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -28,6 +28,16 @@
                     <li><a href="#projects">Projekte</a></li>
                     <li><a href="#skills">Stack</a></li>
                     <li><a href="#about">Über mich</a></li>
+                    <li>
+                        <a
+                            href="assets/CV/annapingsmann-lebenslauf.pdf"
+                            class="nav-cv"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Lebenslauf ↗
+                        </a>
+                    </li>
                     <li><a href="#contact" class="nav-cta">Kontakt ↗</a></li>
                     <li class="lang-switch"><a href="index.html">EN</a><span>/</span><a href="index-de.html" class="active">DE</a></li>
                 </ul>
@@ -36,6 +46,15 @@
                     <li><a href="#projects">Projekte</a></li>
                     <li><a href="#skills">Stack</a></li>
                     <li><a href="#about">Über mich</a></li>
+                    <li>
+                        <a
+                            href="assets/CV/annapingsmann-resume.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Lebenslauf 
+                        </a>
+                    </li>
                     <li><a href="#contact">Kontakt</a></li>
 
                     <li class="mobile-lang-switch">
@@ -70,10 +89,20 @@
                     <p class="hero-meta">
                         Fließend in Deutsch, Englisch und Japanisch
                     </p>
-                    <br/>
+                    
                     <div class="hero-actions">
-                        <a href="#projects" class="btn-primary">Projekte ansehen ↓</a>
-                        <a href="#contact" class="btn-secondary">Kontakt aufnehmen</a>
+                         <a href="#projects" class="btn-primary">
+                            Projekte ansehen ↓
+                        </a>
+
+                        <a
+                            href="assets/CV/annapingsmann-lebenslauf.pdf"
+                            class="btn-secondary btn-cv"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Lebenslauf ↗
+                        </a>
                     </div>
                 </div>
             </section>
@@ -309,7 +338,7 @@
                                     <span class="skill-pill"><span class="skill-dot dot-green"></span>Node.js</span>
                                     <span class="skill-pill"><span class="skill-dot dot-green"></span>Express</span>
                                     <span class="skill-pill"><span class="skill-dot dot-green"></span>REST APIs</span>
-                                    <span class="skill-pill"><span class="skill-dot dot-green"></span>JWT/ Auth</span>
+                                    <span class="skill-pill"><span class="skill-dot dot-green"></span>JWT/ Authentifizierung</span>
                                     <span class="skill-pill"><span class="skill-dot dot-green"></span>Mongoose</span>
                                 </div>
                             </div>
@@ -341,7 +370,6 @@
                                     <span class="skill-pill"><span class="skill-dot dot-blue"></span>API Integration</span>
                                     <span class="skill-pill"><span class="skill-dot dot-blue"></span>State Management</span>
                                     <span class="skill-pill"><span class="skill-dot dot-blue"></span>Debugging und Deployment</span>
-                                    <span class="skill-pill"><span class="skill-dot dot-blue"></span>Debugging und Deployment</span>
                                     <span class="skill-pill"><span class="skill-dot dot-blue"></span>Clean Code</span>
                                     <span class="skill-pill"><span class="skill-dot dot-blue"></span>User Flows</span>
                                 </div>
@@ -361,9 +389,11 @@
                             <h2 class="section-title">Vom Raum zum Interface.</h2>
                             <p class="about-text">
                                 Bevor ich in die Entwicklung gewechselt bin, habe ich Architektur studiert. Dort habe ich gelernt, komplexe Themen zu strukturieren, in Systemen zu denken und nutzerorientiert zu gestalten.
-                                <br/> <br/>
+                            </p>
+                            <p>
                                 Heute übertrage ich diese Denkweise auf digitale Produkte: mit klarer Frontend-Logik, sauberem Code und nachvollziehbaren Datenflüssen. Dazu bringe ich internationale Erfahrung und sichere Kommunikation auf Deutsch, Englisch und Japanisch mit.                            </p>
-                        </div>
+                            </p>
+                            </div>
 
                         <div class="pfp-wrap reveal reveal-delay-1">
                             <div class="pfp">
@@ -374,10 +404,10 @@
                                 />
                             </div>
 
-                            <a href="assets/CV/anna-pingsmann-lebenslauf.pdf" class="resume-btn" target="_blank" rel="noopener">
-                                Lebenslauf 
+                            <a href="assets/CV/annapingsmann-lebenslauf.pdf" class="resume-btn" target="_blank" rel="noopener">
+                                Lebenslauf öffnen 
                 
-                                <span>PDF öffnen →</span>
+                                <span>PDF →</span>
                             </a>
                         </div>
 
