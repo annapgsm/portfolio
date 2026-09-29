@@ -488,43 +488,6 @@ nav.scrolled {
     background: var(--surface);
     box-shadow: 0 5px 18px rgba(28, 23, 23, 0.08);
 }
-
-/* =========================================================
-   7. MARQUEE STRIP
-   - Horizontal moving strip of skills / tools
-   - Decorative support section after hero
-   ========================================================= */
-
-.marquee-section {
-    border-top: 1px solid var(--rule);
-    border-bottom: 1px solid var(--rule);
-    padding: 1rem 0;
-    overflow: hidden;
-    background: var(--surface);
-}
-
-.marquee-track {
-    display: flex;
-    gap: 3rem;
-    animation: marquee 60s linear infinite;
-    width: max-content;
-}
-
-.marquee-item {
-    font-family: var(--mono);
-    font-size: 12px;
-    color: var(--ink-3);
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-}
-
-.marquee-item::after {
-    content: "·";
-    color: var(--rule);
-}
-
 /* =========================================================
    8. SHARED SECTION HEADERS
    - Reused in projects and potentially other sections
